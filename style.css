@@ -1,3 +1,107 @@
-/* .check{
-    filter:invert(green) ;
-} */
+/**********************/
+/*  Edit CSS global   */
+/**********************/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    min-height: 100vh;
+    height: auto;
+    background-color:#FAFAF9;
+}
+
+article{
+    display: flex;
+       
+}
+
+h1,
+h2,
+p,
+li{
+    font-family: 'Sora', 'Sans Serif';
+}
+
+h1{
+    font-size: 2.25em;
+}
+
+h2{
+    font-size: 1em;
+    padding: 0.625em 0;
+}
+
+p{
+    font-size: 1.25em;
+}
+
+li{
+    font-size: 0.875em;
+    
+}
+
+
+/**********************/
+/* Edit Container Axe */
+/**********************/
+
+.container_axe{
+    padding-left: 3.13em;
+}
+
+.container_axe p{
+    padding-top: 1.563em;
+}
+
+.star_y_s{
+    border-radius: 50%;
+    margin-bottom: 0.625em;
+    background-color: yellow;
+}
+
+.container_checklist{
+    display: block;
+    padding-top: 3.13em;
+}
+
+.check{
+    width: 24px;
+    height: 24px;
+    margin-top: 0.25em;
+}
+/**************************/
+/* Edit Container Comment */
+/**************************/
+
+.container_comment_section{
+    width: 21.88em;
+    height: 9.38em;
+    background-color: white;
+    border: 0px solid black;
+    border-radius: 0.625em;
+    padding-left: 1.563em;
+    padding: 0.938em 1.563em;
+}
+
+img[alt*="Star"]{
+    padding-bottom: 0.25em;
+}
+
+.container_comment_logo{
+    width: 6.25em;
+    height: 2.188em;
+    padding-right: 0.625em;
+    
+
+}
+
+.container_comment p{
+    font-size: 0.875em;
+}
