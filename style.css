@@ -40,11 +40,15 @@ h2{
 
 p{
     font-size: 1.25em;
+    line-height: 1.5em;
 }
 
 li{
     font-size: 0.875em;
-    
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+    margin: 0.625em 0 ;
 }
 
 
@@ -63,7 +67,8 @@ li{
 .star_y_s{
     border-radius: 50%;
     margin-bottom: 0.625em;
-    background-color: yellow;
+    background-color: #e5ac29;
+    padding: 0.175em;
 }
 
 .container_checklist{
@@ -74,11 +79,15 @@ li{
 .check{
     width: 24px;
     height: 24px;
-    margin-top: 0.25em;
 }
 /**************************/
 /* Edit Container Comment */
 /**************************/
+.container_comment{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 .container_comment_section{
     width: 21.88em;
@@ -88,6 +97,15 @@ li{
     border-radius: 0.625em;
     padding-left: 1.563em;
     padding: 0.938em 1.563em;
+}
+
+div[class*="meta"] {
+    margin-right: 12em;
+}
+
+div[class*="google"] {
+    margin-left: 10em;
+    margin-bottom: 2.5em;
 }
 
 img[alt*="Star"]{
@@ -104,4 +122,31 @@ img[alt*="Star"]{
 
 .container_comment p{
     font-size: 0.875em;
+}
+
+/**************************/
+/*    Edit Media part     */
+/**************************/
+
+@media screen and (max-width:900px) {
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container_axe{
+        padding-left: 1.625em;
+    }
+
+    .container_comment{
+        margin-top: 5em;
+        padding-left: 2em;
+    }
+    
+    div[class*="google"] {
+        margin-left: 14em;
+        margin-right: 2em;
+    }
+
+    
 }
